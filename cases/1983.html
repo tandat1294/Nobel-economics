@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="Gérard Debreu và Nobel Kinh tế 1983: general equilibrium, fixed-point theorem, state-contingent commodities và di sản đối với tài chính hiện đại.">
+<title>1983 — Gérard Debreu | Nobel Economics</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,750&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <a class="brand" href="../index.html">NOBEL ECONOMICS</a>
+  <div class="nav-right">
+    <a class="back" href="../index.html">← Back to archive</a>
+    <button class="theme-toggle" id="themeToggle" type="button">LIGHT MODE</button>
+  </div>
+</header>
+
+<section class="case-hero">
+  <div class="hero-meta">
+    <div>
+      <div class="kicker">Economic Sciences · Nobel Case</div>
+      <div class="case-year">1983</div>
+    </div>
+    <div class="meta-list">
+      <span><b>Laureate</b> / Gérard Debreu</span>
+      <span><b>Institution</b> / University of California, Berkeley</span>
+      <span><b>Hero concept</b> / General equilibrium existence</span>
+      <span><b>Reading mode</b> / Story + Proof Intuition</span>
+      <span><b>Read time</b> / <span data-read-time>Đang tính…</span></span>
+    </div>
+  </div>
+
+  <div class="hero-title">
+    <div class="kicker">The central question</div>
+    <h1>Khi một định lý hình học giúp chứng minh rằng thị trường có thể có lời giải</h1>
+    <p class="subtitle">Nếu hàng triệu người mua, người bán và hàng nghìn loại hàng hóa cùng ra quyết định mà không ai đứng ra điều phối, liệu có chắc tồn tại ít nhất một hệ thống giá khiến tất cả những quyết định ấy tương thích với nhau?</p>
+    <div class="citation">Prize motivation / “for having incorporated new analytical methods into economic theory and for his rigorous reformulation of the theory of general equilibrium” · Nobel Foundation, 1983</div>
+  </div>
+</section>
+
+<main class="read-shell">
+  <nav class="toc" id="toc">
+    <div class="toc-title">Case contents</div>
+    <a href="#s1">01 · A mathematician enters economics</a>
+    <a href="#s2">02 · The gap beneath equilibrium</a>
+    <a href="#s3">03 · Fixed-point intuition</a>
+    <a href="#s4">04 · Why convexity matters</a>
+    <a href="#s5">05 · Theory of Value</a>
+    <a href="#s6">06 · Time, uncertainty & finance</a>
+    <a href="#s7">07 · Existence ≠ uniqueness</a>
+    <a href="#s8">08 · Economic theory in mathematical mode</a>
+    <a href="#takeaway">The Idea to Remember</a>
+    <div class="toc-year">Archive record / 1983<br>Story first · proof underneath</div>
+  </nav>
+
+  <article class="story">
+    <section class="story-section" id="s1">
+      <div class="section-no">01 / The laureate</div>
+      <h2>Một nhà toán học bước sang kinh tế — rồi thay đổi tiêu chuẩn của cả ngành</h2>
+
+      <p class="dropcap">Gérard Debreu sinh ngày 4 tháng 7 năm 1921 tại Calais, thành phố cảng ở miền Bắc nước Pháp, trong một gia đình gắn với nghề sản xuất ren truyền thống. Con đường ban đầu của ông không hướng tới economics. Nó hướng tới mathematics.</p>
+
+      <p>Chiến tranh thế giới thứ hai làm con đường ấy liên tục bị gián đoạn. Debreu học toán tại Ambert, Grenoble rồi École Normale Supérieure ở Paris. Sau D-Day, ông trì hoãn kỳ thi cuối cùng để gia nhập quân đội Pháp, được đào tạo sĩ quan tại Cherchell ở Algeria và phục vụ trong lực lượng chiếm đóng của Pháp tại Đức trước khi hoàn tất <em>Agrégation de Mathématiques</em> năm 1945.</p>
+
+      <p>Những năm ngay sau chiến tranh mới là lúc cú rẽ quan trọng xảy ra. Debreu dần chuyển từ mathematics sang economics, chịu ảnh hưởng của lý thuyết cân bằng tổng quát của Léon Walras và công trình của Maurice Allais. Học bổng Rockefeller đưa ông tới Mỹ; năm 1950 ông gia nhập Cowles Commission tại Chicago, rồi tiếp tục cùng Cowles khi trung tâm chuyển tới Yale.</p>
+
+      <p>Đó là một intellectual environment đặc biệt. John von Neumann, game theory, activity analysis, linear programming, econometrics và mathematical economics đang làm thay đổi cách economists xây models. Trong Nobel Lecture, Debreu nhớ lại thời điểm gia nhập Cowles năm 1950 như một môi trường tương tác gần như lý tưởng cho kiểu research ông muốn theo đuổi.</p>
+
+      <p>Phong cách của Debreu thường được các historians liên hệ với truyền thống formalist của toán học Pháp và tinh thần Bourbaki: bắt đầu từ definitions thật rõ, nêu assumptions chính xác, rồi chỉ chấp nhận những conclusions có thể suy ra rigorously. Nhưng điều quan trọng hơn nhãn “Bourbaki” là tiêu chuẩn ông mang sang economics:</p>
+
+      <div class="callout">
+        <div class="callout-label">The methodological shift</div>
+        <p>Một intuition kinh tế dù thuyết phục đến đâu vẫn không thay thế được câu hỏi: assumptions chính xác là gì, theorem nói điều gì, và điều gì thực sự đã được chứng minh?</p>
+      </div>
+
+      <div class="deep">
+        <button type="button">＋ Evidence / Debreu's intellectual journey</button>
+        <div class="content">
+          Sau thời gian tại Cowles, Debreu làm việc tại Center for Advanced Study in the Behavioral Sciences ở Stanford năm 1960–1961 và gia nhập UC Berkeley năm 1962. Berkeley bổ nhiệm ông thêm vào Department of Mathematics năm 1975; ông nghỉ hưu năm 1991.
+          <div class="source-line">Primary project material + UC Berkeley biographical record</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="s2">
+      <div class="section-no">02 / The problem</div>
+      <h2>Một lỗ hổng nằm dưới nền móng của “bàn tay vô hình”</h2>
+
+      <p>Câu chuyện phải quay về Léon Walras. Từ thế kỷ XIX, Walras hình dung nền kinh tế như một mạng lưới các markets liên kết với nhau. Giá thịt ảnh hưởng đến lựa chọn của consumers, nhưng cũng liên hệ với giá thức ăn chăn nuôi, wages, land, transportation và hàng loạt goods khác. Vì thế, không thể hiểu một market hoàn toàn tách biệt khỏi những markets còn lại.</p>
+
+      <p>General equilibrium theory đặt câu hỏi: liệu có một <strong>vector giá</strong> mà tại đó, khi mọi consumers tối ưu lựa chọn và mọi producers tối ưu production plan, những decisions riêng lẻ ấy trở nên tương thích — supply và demand của toàn bộ hệ thống cùng “khớp” với nhau?</p>
+
+      <p>Nhưng có một khác biệt rất lớn giữa việc <em>viết ra một hệ phương trình</em> và việc <em>chứng minh hệ đó có nghiệm kinh tế hợp lý</em>.</p>
+
+      <p>Hãy tưởng tượng bro có một puzzle 500 mảnh và một khung tranh có đúng 500 vị trí. Việc “500 mảnh = 500 chỗ” không chứng minh rằng mọi mảnh chắc chắn ghép được thành hình hoàn chỉnh. Trong mathematics, số equations bằng số unknowns cũng không đảm bảo một solution tồn tại, càng không đảm bảo solution đó có những properties economics cần.</p>
+
+      <p>Ở đây cần một correction lịch sử quan trọng. Khoảng trống tồn tại của general equilibrium <strong>không hoàn toàn bị bỏ mặc cho đến Debreu</strong>. Abraham Wald đã có những đóng góp quan trọng về existence trong thập niên 1930. Chính Nobel materials năm 1983 cũng đặt Debreu trong dòng phát triển dài hơn ấy. Đến năm 1954, Kenneth Arrow và Gérard Debreu đưa ra một formulation hiện đại và tổng quát hơn; Lionel McKenzie cũng có một proof độc lập cùng thời.</p>
+
+      <div class="callout">
+        <div class="callout-label">What changed in 1954?</div>
+        <p>General equilibrium không còn chỉ là một system economists hy vọng sẽ có nghiệm. Existence trở thành một theorem: nếu một tập conditions đủ rõ được thỏa mãn, ít nhất một competitive equilibrium tồn tại.</p>
+      </div>
+    </section>
+
+    <section class="story-section" id="s3">
+      <div class="section-no">03 / The mathematical move</div>
+      <h2>Khi economics đi mượn một ý tưởng từ topology</h2>
+
+      <p>Lời giải không đến từ việc cố gắng giải trực tiếp hàng nghìn equations. Nó đến từ một loại reasoning khác: <strong>fixed-point theorem</strong>.</p>
+
+      <p>Một hình dung đơn giản là đặt một bản đồ nhỏ của một khu vực ngay trên chính khu vực đó. Dù bro dịch chuyển hay xoay bản đồ thế nào, miễn toàn bộ bản đồ vẫn nằm trong vùng mà nó mô tả, có những conditions dưới đó ta có thể đảm bảo tồn tại ít nhất một điểm trên bản đồ trùng đúng với vị trí thật của điểm đó ngoài đời.</p>
+
+      <p>Đó là intuition — không phải proof — của “fixed point”: một point mà transformation đưa trở lại chính nó.</p>
+
+      <p>Trong Nobel Lecture, Debreu kể rằng tại Cowles ông biết tới lemma của von Neumann, được Shizuo Kakutani reformulate thành fixed-point theorem năm 1941, và tới cách John Nash sử dụng fixed-point reasoning cho equilibrium trong games.</p>
+
+      <p>Arrow và Debreu nhận ra rằng general equilibrium có thể được viết lại theo một structure tương tự.</p>
+
+      <div class="step-flow">
+        <div class="flow-row"><div class="flow-no">01</div><div><b>Giả định một vector giá</b><p>Mỗi commodity trong economy có một relative price.</p></div></div>
+        <div class="flow-row"><div class="flow-no">02</div><div><b>Consumers phản ứng</b><p>Với prices và budget đã cho, họ chọn consumption bundles phù hợp với preferences.</p></div></div>
+        <div class="flow-row"><div class="flow-no">03</div><div><b>Producers phản ứng</b><p>Với cùng prices, firms lựa chọn production plans trong technology sets của mình.</p></div></div>
+        <div class="flow-row"><div class="flow-no">04</div><div><b>Tính excess demand</b><p>Ở mỗi price vector, một số markets có excess demand, một số có excess supply.</p></div></div>
+        <div class="flow-row"><div class="flow-no">05</div><div><b>Tìm một fixed point</b><p>Dưới những assumptions phù hợp, mathematical mapping/correspondence có một point tự-consistent.</p></div></div>
+        <div class="flow-row"><div class="flow-no">06</div><div><b>Competitive equilibrium</b><p>Tại point đó, independent optimization decisions có thể trở nên mutually compatible.</p></div></div>
+      </div>
+
+      <div class="deep">
+        <button type="button">＋ Deep dive / why Kakutani — not just a simple function</button>
+        <div class="content">
+          Trong economics, một price vector có thể tương ứng với nhiều optimal choices chứ không nhất thiết chỉ một. Vì vậy object toán học tự nhiên thường là một <em>correspondence</em> — một mapping có thể trả về một tập outcomes — thay vì một function chỉ cho đúng một output. Kakutani's theorem là fixed-point theorem dành cho loại correspondence này dưới các conditions thích hợp.
+          <div class="source-line">Primary source layer / Debreu Nobel Lecture, discussion of Kakutani and Nash</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="s4">
+      <div class="section-no">04 / Proof intuition</div>
+      <h2>Vì sao một từ nghe khô khan như “convexity” lại quan trọng?</h2>
+
+      <p>Fixed-point theorem không hoạt động như phép thuật. Nó cần assumptions. Một trong những assumptions thường xuất hiện trong general equilibrium theory là <strong>convexity</strong>.</p>
+
+      <p>Hãy tưởng tượng consumer thích hai consumption bundles A và B. Nếu một mixture nằm giữa A và B cũng không tệ hơn cả hai extreme choices theo một cách đủ “êm”, preferences có cấu trúc convex. Tương tự, trong production theory, convex technology set mang ý nghĩa rằng các combinations hay mixtures của feasible production plans vẫn có thể feasible dưới những assumptions nhất định.</p>
+
+      <p>Convexity quan trọng vì nó khiến optimization problems có structure tốt hơn và cho phép economics sử dụng những theorem hình học mạnh.</p>
+
+      <p>Trong Nobel Lecture, Debreu đặc biệt nói tới <strong>supporting hyperplane theorem</strong>. Hình dung một tập convex như một khối có bề mặt trơn tương đối. Tại một boundary point, ta có thể đặt một “mặt phẳng đỡ” chạm khối mà không cắt xuyên qua nó. Vector vuông góc với mặt phẳng ấy có thể được diễn giải như một vector prices hỗ trợ một allocation.</p>
+
+      <div class="formula">Convex set → supporting hyperplane → price vector</div>
+
+      <p>Điều đẹp ở đây là economics không chỉ “mượn mathematics để tính”. Việc viết welfare economics và equilibrium bằng language của sets, convexity và hyperplanes buộc economists phải định nghĩa lại thật rõ những concepts cơ bản mà trước đó họ thường sử dụng bằng trực giác.</p>
+
+      <div class="deep">
+        <button type="button">＋ Deep dive / supporting hyperplane intuition</button>
+        <div class="content">
+          Nếu một feasible set là convex và ta đứng tại một suitable boundary point, supporting hyperplane có thể đóng vai trò như một hệ thống relative prices: nó “đỡ” feasible set ở allocation đó. Debreu nhấn mạnh rằng set-theoretic reformulation làm treatment trở nên rigorous, general và simpler hơn nhiều cách tiếp cận differential calculus truyền thống trong một số bài toán welfare.
+          <div class="source-line">Primary source layer / “Economic Theory in the Mathematical Mode”</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="s5">
+      <div class="section-no">05 / The book</div>
+      <h2><em>Theory of Value</em> — khi economics được viết như một hệ tiên đề</h2>
+
+      <p>Năm 1959, Debreu hệ thống hóa phần lớn chương trình nghiên cứu của mình trong <em>Theory of Value: An Axiomatic Analysis of Economic Equilibrium</em>, Cowles Foundation Monograph No. 17.</p>
+
+      <p>Cuốn sách ngắn, austere và gần như cố tình tránh kể chuyện. Nó bắt đầu bằng mathematics, rồi đi qua commodities and prices, producers, consumers, equilibrium, optimum và uncertainty. Definitions được đặt trước propositions; propositions đứng trên assumptions; mỗi conclusion phải biết chính xác nó được phép dựa vào điều gì.</p>
+
+      <p>Đây không phải stylistic eccentricity. Nó phản ánh một conception of science rất rõ: nếu economic theory muốn đưa ra statements có tính general, language của theory phải đủ chính xác để mọi reader có thể biết statement ấy đúng trong universe nào.</p>
+
+      <div class="callout">
+        <div class="callout-label">Debreu's standard of rigor</div>
+        <p>Một model tốt không chỉ cho ra một answer. Nó phải cho chúng ta biết answer phụ thuộc vào assumptions nào — để khi reality vi phạm assumptions, ta biết chính xác phần nào của conclusion cần được xem xét lại.</p>
+      </div>
+
+      <p>Đây có lẽ là legacy lớn nhất nhưng khó nhìn thấy nhất của Debreu. Ngày nay những cụm từ như existence, uniqueness, continuity, convexity, comparative statics hay equilibrium correspondence xuất hiện tự nhiên trong graduate microeconomics. Trước Debreu, tiêu chuẩn formal ấy chưa phải là ngôn ngữ mặc định của discipline.</p>
+
+      <div class="deep">
+        <button type="button">＋ Source note / what Theory of Value actually contains</button>
+        <div class="content">
+          Cấu trúc của Cowles Monograph đi qua: Mathematics; Commodities and Prices; Producers; Consumers; Equilibrium; Optimum; Uncertainty. Điều này quan trọng vì chapter về uncertainty không phải một appendix ngẫu nhiên — nó cho thấy framework được xây để mở rộng sang thời gian và states of the world.
+          <div class="source-line">Cowles Foundation / Theory of Value table of contents</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="s6">
+      <div class="section-no">06 / Finance Lens</div>
+      <h2>Nếu thời gian và rủi ro chỉ là “đặc điểm” của hàng hóa thì sao?</h2>
+
+      <p>Đây là nơi Debreu trở nên đặc biệt thú vị đối với finance.</p>
+
+      <p>Trong general equilibrium framework, một commodity không nhất thiết chỉ được nhận diện bởi physical characteristics. Nó còn có thể được phân biệt bởi <strong>date</strong> và <strong>location</strong>. Khi uncertainty được đưa vào, ta có thể phân biệt thêm bởi <strong>event hoặc state of the world</strong> trong đó delivery xảy ra.</p>
+
+      <p>Hãy lấy một ví dụ rất đời thường.</p>
+
+      <p><strong>Một chiếc ô giao tại Sài Gòn vào thứ Ba nếu trời mưa</strong> và <strong>một chiếc ô giao tại Sài Gòn vào thứ Ba nếu trời không mưa</strong> có thể được xem là hai contingent commodities khác nhau, dù physical umbrella hoàn toàn giống nhau.</p>
+
+      <p>Finance chỉ cần thay “chiếc ô” bằng cash flow.</p>
+
+      <p>Một dollar nhận được trong boom và một dollar nhận được trong recession đều là một dollar về mặt physical unit. Nhưng economic value của chúng có thể khác nhau vì chúng xuất hiện trong hai states khác nhau — và marginal value of wealth của investor ở những states ấy cũng khác nhau.</p>
+
+      <div class="callout">
+        <div class="callout-label">Finance Lens</div>
+        <p>Một Arrow–Debreu security là conceptual claim trả 1 unit trong đúng một state và 0 ở những states còn lại. Nếu biết prices của những state claims cơ bản, một complex security có thể được nhìn như một package của các contingent payoffs.</p>
+      </div>
+
+      <div class="step-flow">
+        <div class="flow-row"><div class="flow-no">A</div><div><b>Define states</b><p>Boom · Normal · Recession.</p></div></div>
+        <div class="flow-row"><div class="flow-no">B</div><div><b>Write security payoffs</b><p>Một bond, stock hay derivative tạo cash flows khác nhau trong mỗi state.</p></div></div>
+        <div class="flow-row"><div class="flow-no">C</div><div><b>Attach state prices</b><p>Mỗi unit payoff ở mỗi state có một economic price.</p></div></div>
+        <div class="flow-row"><div class="flow-no">D</div><div><b>Aggregate</b><p>Security value có thể được hiểu từ giá trị của package state-contingent payoffs.</p></div></div>
+      </div>
+
+      <p>Cần giữ đúng historical attribution: Debreu không “phát minh option pricing”. Trong Nobel Lecture, chính ông credit Kenneth Arrow với bước thêm events vào commodity description. Nhưng Arrow–Debreu language trở thành một foundational way of thinking về state prices, contingent claims và asset pricing.</p>
+
+      <div class="deep">
+        <button type="button">＋ Deep dive / from contingent commodities to asset pricing</button>
+        <div class="content">
+          Modern finance thường sử dụng state-price language để phân tích securities có payoffs phụ thuộc vào tương lai. Một derivative có thể được decomposed conceptually thành contingent payoffs theo states. Đây là intellectual connection, không phải tuyên bố rằng Debreu trực tiếp xây Black–Scholes hay thị trường options hiện đại.
+          <div class="source-line">Interpretive bridge / Arrow–Debreu state-preference framework → modern finance</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="s7">
+      <div class="section-no">07 / The limit</div>
+      <h2>Existence không phải uniqueness. Và uniqueness cũng chưa phải stability.</h2>
+
+      <p>Đây là distinction quan trọng nhất để không biến Debreu thành một câu chuyện quá đẹp.</p>
+
+      <p>Một existence theorem nói:</p>
+      <div class="formula">Under conditions C → at least one equilibrium exists</div>
+
+      <p>Nó không tự động nói:</p>
+      <div class="formula">there is only one equilibrium</div>
+
+      <p>Và càng không nói:</p>
+      <div class="formula">the economy will dynamically converge to that equilibrium after a disturbance</div>
+
+      <p>Ba questions — <strong>existence, uniqueness, stability</strong> — khác nhau.</p>
+
+      <p>Trong những nghiên cứu sau này của Hugo Sonnenschein, Rolf Mantel và Gérard Debreu, economists phát hiện một result gây khó chịu: individual rationality và utility maximization có thể đặt surprisingly weak restrictions lên shape của aggregate excess-demand function ngoài một số properties nền tảng.</p>
+
+      <p>Điều đó mở cửa cho multiple equilibria và dynamics phức tạp hơn rất nhiều so với hình ảnh “giá cả tự điều chỉnh nhẹ nhàng về đúng một điểm cân bằng”.</p>
+
+      <div class="callout">
+        <div class="callout-label">The caveat to remember</div>
+        <p>Debreu giúp chứng minh rằng đích đến <em>có thể tồn tại</em>. Theory không hứa rằng chỉ có một đích đến, cũng không hứa nền kinh tế luôn biết đường đi tới đó.</p>
+      </div>
+
+      <p>Không nên kể điều này như một dramatic story rằng Debreu “phá hủy chính theory của mình”. Nó chính xác hơn khi xem đây là bước tiếp theo của cùng một scientific program: sau khi existence được làm rõ, uniqueness và stability trở thành những questions riêng cần theorem riêng.</p>
+    </section>
+
+    <section class="story-section" id="s8">
+      <div class="section-no">08 / Inside the Nobel Lecture</div>
+      <h2>“Economic Theory in the Mathematical Mode” thực sự muốn nói điều gì?</h2>
+
+      <p>Nobel Lecture năm 1983 của Debreu không đơn thuần kể lại proof of equilibrium. Nó là một reflection về cách mathematics đã thay đổi economic theory.</p>
+
+      <p>Debreu bắt đầu lịch sử ấy từ Cournot, Walras, Edgeworth và Pareto; rồi coi năm 1944 — với von Neumann và Morgenstern — như một symbolic beginning của contemporary mathematical economics. Ông nhắc tới Samuelson, Koopmans, Leontief, Dantzig và môi trường Cowles như những forces cùng đẩy discipline sang một mathematical mode mới.</p>
+
+      <p>Điểm đáng nhớ không phải là “mathematics làm economics trở nên đúng”. Mathematics không thể rescue một bad assumption, và một theorem không tự chứng minh model description là realistic.</p>
+
+      <p>Điểm mạnh nằm ở chỗ khác: formalization làm economist khó lẩn tránh ambiguity hơn.</p>
+
+      <div class="step-flow">
+        <div class="flow-row"><div class="flow-no">01</div><div><b>Assumption</b><p>Điều theory yêu cầu chúng ta chấp nhận trước.</p></div></div>
+        <div class="flow-row"><div class="flow-no">02</div><div><b>Definition</b><p>Exactly what “commodity”, “preference”, “equilibrium” hay “price” means.</p></div></div>
+        <div class="flow-row"><div class="flow-no">03</div><div><b>Theorem</b><p>Conclusion nào thật sự follow từ assumptions.</p></div></div>
+        <div class="flow-row"><div class="flow-no">04</div><div><b>Interpretation</b><p>Economist được phép nói gì về reality — và điều gì vượt ra ngoài theorem.</p></div></div>
+      </div>
+
+      <p>Trong Banquet Speech, Debreu chọn ba virtues để nói về mathematical theory: <strong>logical rigor, generality và simplicity</strong>. Ba từ ấy gần như tóm tắt toàn bộ aesthetic của ông.</p>
+
+      <div class="deep">
+        <button type="button">＋ Original source / Nobel Lecture</button>
+        <div class="content">
+          <strong>Gérard Debreu, “Economic Theory in the Mathematical Mode,” 8 December 1983.</strong><br><br>
+          Production version của website sẽ liên kết trực tiếp tới Nobel lecture chính thức và bibliography của case. Tài liệu dự án “Nobel Lectures: Economic Sciences 1981–1990” vẫn là primary editorial source của series.
+          <div class="source-line">Nobel Foundation / Prize Lecture 1983</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section takeaway" id="takeaway">
+      <div class="section-no">The Idea to Remember</div>
+      <h2>Debreu không chứng minh rằng thị trường luôn đúng. Ông làm một việc khó hơn: nói chính xác theory đã chứng minh được điều gì.</h2>
+
+      <div class="memory">
+        <p>Nếu một system có đúng số equations và unknowns, điều đó chưa đủ để tin solution tồn tại. Economics phải chứng minh existence — và phải nói rõ những assumptions cần thiết cho proof ấy.</p>
+      </div>
+
+      <p>Smith cho economics một intuition về invisible hand. Walras biến nền kinh tế thành một system of interdependent markets. Wald mở những bước quan trọng về existence. Arrow, Debreu và McKenzie đưa existence theory tới một formulation hiện đại, rigorous hơn.</p>
+
+      <p>Nhưng Debreu còn để lại một idea đặc biệt hữu ích cho finance: nếu date và state of the world trở thành một phần của commodity definition, uncertainty có thể được đưa vào cùng một language của prices và equilibrium.</p>
+
+      <p>Một dollar trong recession không còn phải được xem là “cùng một thứ” với một dollar trong boom chỉ vì chúng cùng in con số 1 trên mặt.</p>
+
+      <p>Và đó là lúc một theory tưởng như cực kỳ abstract bắt đầu nói chuyện trực tiếp với asset pricing.</p>
+
+      <a class="next-case" href="1990.html">
+        <div class="next-year">1990</div>
+        <div>
+          <h3>Markowitz · Miller · Sharpe</h3>
+          <p>Coming next: từ portfolio choice đến CAPM và corporate finance — khi risk trở thành một ngôn ngữ chung của financial economics.</p>
+        </div>
+        <div class="next-arrow">→</div>
+      </a>
+    </section>
+  </article>
+
+  <aside class="aside-rail">
+    <div class="rail-card">
+      <div class="rail-label">Read before</div>
+      <h3>1981 · Tobin</h3>
+      <p>Tobin hỏi financial markets truyền vào real economy như thế nào. Debreu lùi sâu hơn một tầng: một system of market prices có equilibrium hay không?</p>
+      <a class="idea-link" href="1981.html">Return to Tobin 1981 →</a>
+    </div>
+
+    <div class="rail-card">
+      <div class="rail-label">Finance connection</div>
+      <h3>State Prices</h3>
+      <p>State-contingent commodities tạo một bridge từ general equilibrium sang modern asset-pricing language.</p>
+      <a class="idea-link" href="../index.html#ideas">Trace the idea chain →</a>
+    </div>
+
+    <div class="rail-card">
+      <div class="rail-label">Intellectual network</div>
+      <h3>Cowles</h3>
+      <p>Tobin, Debreu và Markowitz đều xuất hiện trong intellectual ecosystem của Cowles — một cross-link mà website sẽ phát triển thành knowledge network.</p>
+    </div>
+
+    <div class="rail-card">
+      <div class="rail-label">Source standard</div>
+      <h3>Primary first</h3>
+      <p>Case được biên tập từ tài liệu Nobel của dự án; public sources được dùng để verify chronology và làm rõ historical attribution.</p>
+    </div>
+  </aside>
+</main>
+
+<footer class="footer">
+  <div><strong>NOBEL ECONOMICS</strong><br><br>Case 1983 · Shared-template architecture</div>
+  <div class="ledger">STORY MODE / PROOF INTUITION / FINANCE LENS<br>PRIMARY SOURCE LAYER / RELATED IDEAS<br>SHARED CSS / SHARED JS</div>
+</footer>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

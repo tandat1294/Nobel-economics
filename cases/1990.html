@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<meta name="description" content="Nobel Kinh tế 1990 — Harry Markowitz, Merton Miller và William Sharpe: portfolio theory, CAPM, capital structure và nền móng của financial economics hiện đại.">
+<title>1990 — Markowitz, Miller & Sharpe | Nobel Economics</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,750&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+
+<body>
+<div class="progress" id="progress"></div>
+
+<header class="topbar">
+  <a class="brand" href="../index.html">NOBEL ECONOMICS</a>
+  <div class="nav-right">
+    <a class="back" href="../index.html">← Back to archive</a>
+    <button class="theme-toggle" id="themeToggle" type="button">LIGHT MODE</button>
+  </div>
+</header>
+
+<section class="case-hero">
+  <div class="hero-meta">
+    <div>
+      <div class="kicker">Economic Sciences · Nobel Case</div>
+      <div class="case-year">1990</div>
+    </div>
+    <div class="meta-list">
+      <span><b>Laureates</b> / Markowitz · Miller · Sharpe</span>
+      <span><b>Field</b> / Financial Economics</span>
+      <span><b>Hero concept</b> / Investor → Market → Firm</span>
+      <span><b>Reading mode</b> / Story + Finance Lens</span>
+      <span><b>Read time</b> / <span data-read-time>Đang tính…</span></span>
+    </div>
+  </div>
+
+  <div class="hero-title">
+    <div class="kicker">Three linked questions</div>
+    <h1>Ba câu hỏi liên hoàn dựng nên ngôn ngữ của tài chính hiện đại</h1>
+    <p class="subtitle">Một nhà đầu tư nên kết hợp các tài sản thế nào? Nếu tất cả cùng hành xử như vậy, thị trường sẽ định giá rủi ro ra sao? Và nếu investor có thể tự quản lý risk và leverage, doanh nghiệp thực sự tạo value bằng cách nào?</p>
+    <div class="citation">Prize record / Harry M. Markowitz · Merton H. Miller · William F. Sharpe · pioneering contributions to the theory of financial economics · 1990</div>
+  </div>
+</section>
+
+<main class="read-shell">
+  <nav class="toc" id="toc">
+    <div class="toc-title">Case contents</div>
+    <a href="#s1">01 · One prize, three questions</a>
+    <a href="#s2">02 · Markowitz: portfolio choice</a>
+    <a href="#s3">03 · Covariance & efficient frontier</a>
+    <a href="#s4">04 · Sharpe: from investor to market</a>
+    <a href="#s5">05 · Beta & systematic risk</a>
+    <a href="#s6">06 · Miller: from market to firm</a>
+    <a href="#s7">07 · Homemade leverage</a>
+    <a href="#s8">08 · When capital structure matters</a>
+    <a href="#s9">09 · Three Nobel lectures, one architecture</a>
+    <a href="#takeaway">The Idea to Remember</a>
+    <div class="toc-year">Archive record / 1990<br>Investor → Market → Firm</div>
+  </nav>
+
+  <article class="story">
+    <section class="story-section" id="s1">
+      <div class="section-no">01 / The prize</div>
+      <h2>Ba laureates — nhưng không phải ba câu chuyện rời nhau</h2>
+
+      <p class="dropcap">Năm 1990, Giải Nobel Kinh tế được trao chung cho Harry Markowitz, Merton Miller và William Sharpe. Nobel volume của giai đoạn 1981–1990 xếp ba người dưới cùng một presentation speech, rồi lần lượt đưa người đọc qua <em>Foundations of Portfolio Theory</em>, <em>Leverage</em> và <em>Capital Asset Prices with and without Negative Holdings</em>.</p>
+
+      <p>Thoạt nhìn, đây là ba chủ đề: investment management, asset pricing và corporate finance.</p>
+
+      <p>Nhưng nếu đặt chúng theo logic của những câu hỏi mà mỗi người giải quyết, một architecture đẹp hơn xuất hiện.</p>
+
+      <div class="step-flow">
+        <div class="flow-row"><div class="flow-no">01</div><div><b>Markowitz · Investor</b><p>Một cá nhân nên kết hợp risky assets như thế nào để quản lý trade-off giữa expected return và portfolio risk?</p></div></div>
+        <div class="flow-row"><div class="flow-no">02</div><div><b>Sharpe · Market</b><p>Nếu tất cả investors đều tối ưu portfolio, equilibrium expected returns của từng asset phải được hình thành ra sao?</p></div></div>
+        <div class="flow-row"><div class="flow-no">03</div><div><b>Miller · Firm</b><p>Nếu investors có thể tự diversify và tự tạo leverage, doanh nghiệp có thể tạo value chỉ bằng cách rearrange financial claims hay không?</p></div></div>
+      </div>
+
+      <div class="callout">
+        <div class="callout-label">The intellectual chain</div>
+        <p>Markowitz bắt đầu từ investor. Sharpe đưa investor vào market equilibrium. Miller quay từ capital market trở lại corporation.</p>
+      </div>
+
+      <p><strong>Investor → Market → Firm.</strong></p>
+
+      <p>Đó sẽ là mạch đọc của Case 1990.</p>
+    </section>
+
+    <section class="story-section" id="s2">
+      <div class="section-no">02 / Markowitz</div>
+      <h2>“Tôi nên chia tiền của mình vào đâu?”</h2>
+
+      <p>Harry Markowitz sinh năm 1927 tại Chicago. Trong autobiography của mình, ông kể một tuổi trẻ đầy những mối quan tâm không liên quan trực tiếp đến stock market: baseball, violin, physics, astronomy và philosophy. Khi học tại University of Chicago, ông dần bị hút vào economics of uncertainty và trở thành student member của Cowles Commission.</p>
+
+      <p>Bước ngoặt của portfolio theory bắt đầu từ một vấn đề tưởng như hẹp hơn nhiều: một dissertation liên quan đến stock market.</p>
+
+      <p>Khi đọc <em>The Theory of Investment Value</em> của John Burr Williams, Markowitz gặp một intuition quen thuộc với bất kỳ ai học valuation ngày nay: stock value liên quan đến present value của future dividends.</p>
+
+      <p>Nhưng nếu investor chỉ quan tâm đến <strong>expected return</strong>, một conclusion kỳ lạ xuất hiện. Hãy tìm security có expected return cao nhất — rồi dồn toàn bộ wealth vào đó.</p>
+
+      <p>Điều này xung đột với một practice rất phổ biến: investors diversify.</p>
+
+      <p>Markowitz nhận ra diversification không phải một thói quen ngẫu nhiên. Nó đang nói rằng investor quan tâm đồng thời đến <strong>return và uncertainty</strong>.</p>
+
+      <div class="callout">
+        <div class="callout-label">The change of question</div>
+        <p>Đừng chỉ hỏi “stock nào tốt nhất?”. Hãy hỏi “combination nào của assets tạo ra portfolio phù hợp nhất?”</p>
+      </div>
+
+      <div class="deep">
+        <button type="button">＋ Evidence / Markowitz, Cowles & Tobin</button>
+        <div class="content">
+          Markowitz phát triển paper “Portfolio Selection” năm 1952 và cuốn <em>Portfolio Selection: Efficient Diversification of Investments</em> năm 1959. Trong autobiographical account, ông ghi nhận giai đoạn tại Cowles Foundation ở Yale theo lời mời của James Tobin là quan trọng đối với việc hoàn thiện cuốn sách.
+          <div class="source-line">Primary source layer / Markowitz biography & Nobel lecture</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="s3">
+      <div class="section-no">03 / Markowitz's breakthrough</div>
+      <h2>Khám phá quan trọng không phải “đa dạng hóa” — mà là covariance</h2>
+
+      <p>Người ta đã biết từ lâu rằng không nên bỏ tất cả trứng vào một giỏ. Markowitz không biến một câu tục ngữ thành Nobel chỉ bằng cách thêm mathematics vào nó.</p>
+
+      <p>Đột phá nằm ở việc ông chỉ ra rằng risk của một portfolio phụ thuộc vào <strong>cách các assets chuyển động cùng nhau</strong>.</p>
+
+      <p>Hãy tưởng tượng bro sở hữu hai business: một cửa hàng kem và một cửa hàng áo mưa.</p>
+
+      <p>Cửa hàng kem kiếm tốt khi trời nóng. Áo mưa kiếm tốt khi thời tiết xấu. Mỗi business riêng lẻ có thể rất volatile. Nhưng nếu earnings của chúng thường thay đổi theo hướng đối lập, việc sở hữu cả hai có thể khiến total portfolio ổn định hơn.</p>
+
+      <p>Bro không làm từng company bớt risky.</p>
+
+      <p>Bro thay đổi <strong>relationship giữa các risks</strong>.</p>
+
+      <div class="formula">σ²ₚ = w²ₐσ²ₐ + w²ᵦσ²ᵦ + 2wₐwᵦ Cov(A,B)</div>
+
+      <p>Term cuối cùng — <strong>covariance</strong> — thay đổi cách finance nhìn asset risk. Một security không thể được đánh giá hoàn toàn trong isolation; điều quan trọng là contribution của nó vào risk của portfolio.</p>
+
+      <p>Từ đây xuất hiện <strong>efficient frontier</strong>: tập hợp những portfolios mà bro không thể tăng expected return mà không chấp nhận thêm risk, hoặc giảm risk mà không hy sinh return.</p>
+
+      <div class="callout">
+        <div class="callout-label">Portfolio intuition</div>
+        <p>Một asset có volatility cao vẫn có thể hữu ích nếu nó di chuyển khác với những gì bro đang sở hữu. “Risky asset” và “risky contribution to my portfolio” không phải cùng một câu hỏi.</p>
+      </div>
+
+      <p>Markowitz đã giải quyết bài toán của <strong>một optimizing investor</strong>.</p>
+
+      <p>Nhưng ông vẫn chưa trả lời câu hỏi: prices và expected returns mà investor nhìn thấy đến từ đâu?</p>
+    </section>
+
+    <section class="story-section" id="s4">
+      <div class="section-no">04 / Sharpe</div>
+      <h2>Nếu tất cả investors đều làm như Markowitz, market sẽ cân bằng ở đâu?</h2>
+
+      <p>William Sharpe sinh năm 1934 tại Boston. Con đường tới financial economics của ông cũng đi qua RAND Corporation — nơi Markowitz từng làm việc.</p>
+
+      <p>Trong autobiographical account, Sharpe kể rằng khi chuẩn bị dissertation tại UCLA, Fred Weston gợi ý ông thử trao đổi với Harry Markowitz. Markowitz không phải formal dissertation adviser, nhưng Sharpe về sau mô tả vai trò của ông gần như một adviser và nói món nợ trí tuệ của mình đối với Markowitz là rất lớn.</p>
+
+      <p>Đó là một connection cá nhân rất hợp với connection về lý thuyết.</p>
+
+      <p>Markowitz hỏi:</p>
+
+      <div class="formula">Given prices & expected returns → investor chooses portfolio</div>
+
+      <p>Sharpe hỏi tiếp:</p>
+
+      <div class="formula">If all investors optimize → what expected returns are consistent with market equilibrium?</div>
+
+      <p>Markowitz từng diễn tả relationship này bằng một analogy từ microeconomics: portfolio theory giống “Part One” — behavior của optimizing agents. Capital asset pricing là bước sang “Part Two” — equilibrium khi tất cả những agents ấy cùng hành động.</p>
+
+      <p>Đó là bridge từ <strong>portfolio selection</strong> sang <strong>asset pricing</strong>.</p>
+
+      <div class="deep">
+        <button type="button">＋ Source note / CAPM was not a one-person discovery</button>
+        <div class="content">
+          Sharpe không phải người duy nhất phát triển những ideas dẫn tới CAPM. Jack Treynor có early unpublished work; John Lintner và Jan Mossin công bố closely related formulations trong cùng thập niên. Case 1990 giữ Sharpe ở vị trí Nobel laureate nhưng không biến CAPM thành câu chuyện của một lone inventor.
+          <div class="source-line">Historical attribution layer / Sharpe biography & asset-pricing literature</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="s5">
+      <div class="section-no">05 / Sharpe's breakthrough</div>
+      <h2>Market không cần trả tiền cho mọi loại risk</h2>
+
+      <p>Giả sử bro sở hữu cổ phiếu của một chuỗi cà phê.</p>
+
+      <p>Một store manager mắc sai lầm. Một sản phẩm mới thất bại. Một chi nhánh gặp scandal. Những shocks như vậy chủ yếu thuộc riêng company.</p>
+
+      <p>Nếu portfolio đủ diversified, rất nhiều company-specific outcomes có thể bù trừ lẫn nhau. Đây là <strong>idiosyncratic risk</strong>.</p>
+
+      <p>Nhưng recession, interest-rate shock hay financial crisis lại khác. Bro có thể mua thêm 10, 100 hay 500 stocks; khi shock tác động lên cả economy, một phần risk vẫn không biến mất.</p>
+
+      <p>Đó là <strong>systematic risk</strong>.</p>
+
+      <p>Từ logic diversification của Markowitz, CAPM đưa ra một benchmark rất mạnh:</p>
+
+      <div class="callout">
+        <div class="callout-label">CAPM intuition</div>
+        <p>Nếu investor có thể diversify một loại risk mà không cần được market bù đắp thêm, expected return phải gắn với phần risk không thể diversification away.</p>
+      </div>
+
+      <div class="formula">βᵢ = Cov(Rᵢ, Rₘ) / Var(Rₘ)</div>
+
+      <p>Beta đo sensitivity của an asset đối với market risk — không đơn giản là total volatility.</p>
+
+      <div class="formula">E(Rᵢ) = Rf + βᵢ [ E(Rₘ) − Rf ]</div>
+
+      <p>Nói bằng ngôn ngữ trực giác: investor nhận compensation cho time value và cho lượng systematic risk mà asset mang vào portfolio.</p>
+
+      <div class="callout">
+        <div class="callout-label">Finance Lens / Valuation</div>
+        <p>CAPM đi thẳng vào valuation: beta → cost of equity → WACC → discount rate của FCFF. Một equilibrium theory của thập niên 1960 vẫn nằm ngay trong spreadsheet DCF hiện đại.</p>
+      </div>
+
+      <p>Nhưng cần giữ một caution quan trọng. Trong Nobel Lecture, Sharpe tự mô tả original CAPM như một model rất parsimonious và dành thời gian cho extensions, institutional constraints, short-selling limitations, taxes, transaction costs và alternative factor approaches.</p>
+
+      <p>CAPM quan trọng không phải vì beta giải thích hoàn hảo mọi expected return ngoài đời, mà vì nó tạo ra một benchmark cực kỳ rõ để economics hỏi: <strong>risk nào đang thực sự được priced?</strong></p>
+    </section>
+
+    <section class="story-section" id="s6">
+      <div class="section-no">06 / Miller</div>
+      <h2>Nếu chỉ thay cách chia chiếc bánh, tại sao chiếc bánh phải lớn hơn?</h2>
+
+      <p>Merton Miller sinh năm 1923 tại Boston, học Harvard, làm economist tại U.S. Treasury rồi lấy PhD tại Johns Hopkins. Tại Carnegie Institute of Technology, ông làm việc cùng Franco Modigliani — Nobel laureate năm 1985.</p>
+
+      <p>Năm 1958, Modigliani và Miller công bố <em>The Cost of Capital, Corporation Finance and the Theory of Investment</em>, một paper đặt ra câu hỏi corporate finance có vẻ gần như quá đơn giản:</p>
+
+      <p><strong>Nếu hai firms có cùng operating assets và cùng future cash flows, tại sao chỉ thay cách chia financing giữa debt và equity lại làm total firm value thay đổi?</strong></p>
+
+      <p>Hãy tưởng tượng business operations tạo ra một chiếc pizza.</p>
+
+      <p>Capital structure quyết định pizza được chia thành claims dành cho debtholders và shareholders như thế nào.</p>
+
+      <p>Trong frictionless benchmark, cắt pizza thành bốn lát hay tám lát không làm nó lớn hơn.</p>
+
+      <div class="formula">Vₗ = Vᵤ</div>
+
+      <p>Levered firm và otherwise identical unlevered firm phải có cùng total value nếu capital structure chỉ rearrange claims mà không thay đổi underlying cash flows hay risk của productive assets.</p>
+
+      <div class="deep">
+        <button type="button">＋ Anecdote / Miller's pizza explanation</button>
+        <div class="content">
+          Miller nổi tiếng với một pizza analogy để giải thích Proposition I: việc cắt một chiếc pizza thành nhiều slices hơn không làm total pizza lớn hơn. Anecdote này xuất hiện trong những public explanations của Miller về M&M, trong đó có later testimony; đây là explanatory story, không phải wording của original 1958 paper.
+          <div class="source-line">Public-source anecdote / used as intuition, not primary theorem text</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="s7">
+      <div class="section-no">07 / Miller's arbitrage logic</div>
+      <h2>Homemade leverage — tại sao investor phải trả premium cho thứ họ có thể tự làm?</h2>
+
+      <p>Giả sử Company A không vay debt. Company B có exactly same operating assets nhưng sử dụng leverage.</p>
+
+      <p>Nếu B được market định giá cao hơn chỉ vì financing mix của nó, investor có thể bán security đang overpriced ở B, mua A và <strong>tự vay tiền</strong> trên personal account để replicate leverage exposure.</p>
+
+      <p>Investor tạo được essentially same risk-return package với cost thấp hơn.</p>
+
+      <p>Arbitrage pressure sẽ kéo valuations lại gần nhau.</p>
+
+      <div class="step-flow">
+        <div class="flow-row"><div class="flow-no">01</div><div><b>Same operating assets</b><p>A và B tạo same underlying business cash flows.</p></div></div>
+        <div class="flow-row"><div class="flow-no">02</div><div><b>Different financing</b><p>B có corporate leverage; A không.</p></div></div>
+        <div class="flow-row"><div class="flow-no">03</div><div><b>Investor replicates</b><p>Mua A + personal borrowing để tạo homemade leverage.</p></div></div>
+        <div class="flow-row"><div class="flow-no">04</div><div><b>Arbitrage eliminates premium</b><p>Corporate packaging alone cannot justify permanently higher value.</p></div></div>
+      </div>
+
+      <p>Điểm này nối rất đẹp với Markowitz.</p>
+
+      <p>Markowitz nói investor có thể tự <strong>diversify</strong>.</p>
+
+      <p>Miller nói investor có thể tự <strong>lever hoặc delever</strong>.</p>
+
+      <p>Nếu shareholders có thể tự rearrange financial exposure trên capital market, management phải chỉ ra một economic mechanism thực sự trước khi tuyên bố một financing decision đã “tạo value”.</p>
+
+      <div class="callout">
+        <div class="callout-label">Corporate Finance Lens</div>
+        <p>Financial engineering không phải phép thuật. Nếu một transaction tạo value, hãy tìm phần cash flow, tax, governance, incentives hoặc real operating economics đã thực sự thay đổi.</p>
+      </div>
+    </section>
+
+    <section class="story-section" id="s8">
+      <div class="section-no">08 / From irrelevance to relevance</div>
+      <h2>Nếu capital structure “không quan trọng”, tại sao CFO vẫn phải suy nghĩ về nó?</h2>
+
+      <p>Đây là chỗ M&M thường bị hiểu sai nhất.</p>
+
+      <p>Modigliani–Miller không nói debt ngoài đời không bao giờ quan trọng. Proposition I cho chúng ta một <strong>frictionless benchmark</strong>: nếu capital structure không thay đổi taxes, distress, incentives, information hay transaction opportunities, việc rearrange claims tự nó không tạo value.</p>
+
+      <p>Điều làm theorem mạnh chính là câu hỏi tiếp theo:</p>
+
+      <div class="formula">If financing matters → which market friction makes it matter?</div>
+
+      <p>Năm 1963, Modigliani và Miller đưa corporate income taxes vào framework và ghi nhận advantage của interest deductibility — nền tảng của intuition về <strong>interest tax shield</strong>.</p>
+
+      <p>Nhưng cần giữ chronology đúng: textbook intuition rằng firm cân bằng tax benefit of debt với expected financial-distress costs là <strong>trade-off theory được phát triển rộng hơn về sau</strong>; không nên gán toàn bộ framework đó cho paper 1963.</p>
+
+      <p>Rồi literature tiếp tục thêm những frictions khác:</p>
+
+      <div class="step-flow">
+        <div class="flow-row"><div class="flow-no">T</div><div><b>Taxes</b><p>Interest deductibility có thể tạo incremental value.</p></div></div>
+        <div class="flow-row"><div class="flow-no">D</div><div><b>Financial distress</b><p>Higher leverage có thể tăng expected distress costs.</p></div></div>
+        <div class="flow-row"><div class="flow-no">A</div><div><b>Agency</b><p>Debt thay đổi incentives và conflicts giữa claimholders.</p></div></div>
+        <div class="flow-row"><div class="flow-no">I</div><div><b>Information</b><p>Financing choices có thể interact với asymmetric information và signaling.</p></div></div>
+      </div>
+
+      <p>Một theorem về <strong>irrelevance</strong> vì thế tạo ra một research program về <strong>relevance</strong>.</p>
+    </section>
+
+    <section class="story-section" id="s9">
+      <div class="section-no">09 / Inside the Nobel Lectures</div>
+      <h2>Ba lectures nhìn lại cùng một discipline đã trưởng thành</h2>
+
+      <p>Nobel volume năm 1990 cho chúng ta một cấu trúc rất đáng chú ý.</p>
+
+      <p>Markowitz mở <em>Foundations of Portfolio Theory</em> bằng việc nhìn lại evolution từ portfolio selection sang microeconomics of capital markets. Ông nói thẳng rằng portfolio theory có thể được xem như phần đầu của capital-market microeconomics — còn work của Sharpe và những người khác về CAPM là bước tiếp sang equilibrium.</p>
+
+      <p>Miller đặt tên lecture đơn giản là <em>Leverage</em>. Ông viết giữa bối cảnh leveraged buyouts của thập niên 1980 và nhấn mạnh irony của việc M&M đôi khi bị mô tả như những người “invented” LBO: original proposition lại nói không thể tạo shareholder value chỉ bằng leverage itself.</p>
+
+      <p>Sharpe, trong <em>Capital Asset Prices with and without Negative Holdings</em>, không chỉ kể lại textbook CAPM. Ông quay lại assumptions và nghiên cứu implications khi negative holdings — short positions — bị hạn chế, đồng thời đặt CAPM trong một broader family của asset-pricing models.</p>
+
+      <div class="deep">
+        <button type="button">＋ Original source / three Nobel lectures</button>
+        <div class="content">
+          <strong>Harry M. Markowitz — “Foundations of Portfolio Theory”</strong><br>
+          <strong>Merton H. Miller — “Leverage”</strong><br>
+          <strong>William F. Sharpe — “Capital Asset Prices with and without Negative Holdings”</strong><br><br>
+          Đây là ba primary lecture chapters trong tài liệu Nobel 1981–1990 của project. Production website sẽ liên kết tới source references và bibliography riêng cho từng laureate.
+          <div class="source-line">Nobel Lectures: Economic Sciences 1981–1990 · 1990 section</div>
+        </div>
+      </div>
+
+      <div class="callout">
+        <div class="callout-label">Finance Lens / One valuation workbook</div>
+        <p>Markowitz nằm dưới diversification và covariance. Sharpe đưa systematic risk vào beta và cost of equity. Miller giúp chúng ta hiểu vì sao capital structure, taxes và financing frictions phải được xử lý cẩn thận khi xây WACC.</p>
+      </div>
+
+      <div class="formula">Portfolio risk → β → Kₑ → WACC → Enterprise Value</div>
+
+      <p>Một analyst có thể không bao giờ mở Nobel Lecture năm 1990. Nhưng intellectual architecture của ba laureates vẫn nằm ngay dưới một DCF model hiện đại.</p>
+    </section>
+
+    <section class="story-section takeaway" id="takeaway">
+      <div class="section-no">The Idea to Remember</div>
+      <h2>Finance có thể phân bổ risk, định giá risk và chuyển risk — nhưng rearranging claims không tự làm chiếc pizza lớn hơn.</h2>
+
+      <div class="memory">
+        <p>Markowitz hỏi một investor nên giữ risk thế nào. Sharpe hỏi market phải trả bao nhiêu cho phần risk không thể diversify. Miller hỏi nếu investors đã tự quản lý được exposure, corporation còn có thể tạo value chỉ bằng financial packaging hay không.</p>
+      </div>
+
+      <p><strong>Markowitz:</strong> asset risk phải được nhìn trong context của portfolio — covariance quan trọng hơn việc chỉ nhìn volatility riêng lẻ.</p>
+
+      <p><strong>Sharpe:</strong> diversified investors không cần được rewarded cho idiosyncratic risk; CAPM đặt systematic exposure và beta vào trung tâm của một equilibrium benchmark.</p>
+
+      <p><strong>Miller:</strong> nếu investors có thể tự borrow, lend và rearrange financial claims, capital structure không thể tự tạo value trong một frictionless world.</p>
+
+      <p>Vậy thứ gì investor không thể tự tạo ra chỉ bằng cách rearrange securities trên brokerage account?</p>
+
+      <p>Một factory tốt hơn. Một patent mạnh hơn. Một product được khách hàng yêu thích hơn. Một distribution network hiệu quả hơn. Một management team phân bổ capital tốt hơn. Một durable competitive advantage.</p>
+
+      <p>Đó là nơi corporate value cuối cùng phải bắt đầu.</p>
+
+      <div class="callout">
+        <div class="callout-label">1990 in one line</div>
+        <p>Investor → Market → Firm: từ lựa chọn portfolio, tới price of risk, rồi tới câu hỏi điều gì thực sự tạo enterprise value.</p>
+      </div>
+
+      <div class="next-case">
+        <div class="next-year">→</div>
+        <div>
+          <h3>The archive is ready to expand</h3>
+          <p>1981, 1983 và 1990 đã stress-test single laureate, mathematics-heavy và multi-laureate cases trên cùng một architecture.</p>
+        </div>
+        <div class="next-arrow">●</div>
+      </div>
+    </section>
+  </article>
+
+  <aside class="aside-rail">
+    <div class="rail-card">
+      <div class="rail-label">Read before</div>
+      <h3>1981 · Tobin</h3>
+      <p>Markowitz và Tobin chia sẻ portfolio language; Tobin đưa lựa chọn tài sản sang macroeconomics và investment.</p>
+      <a class="idea-link" href="1981.html">Return to Tobin 1981 →</a>
+    </div>
+
+    <div class="rail-card">
+      <div class="rail-label">Read before</div>
+      <h3>1983 · Debreu</h3>
+      <p>Debreu giúp xây equilibrium language; Sharpe đưa equilibrium reasoning thẳng vào capital markets.</p>
+      <a class="idea-link" href="1983.html">Return to Debreu 1983 →</a>
+    </div>
+
+    <div class="rail-card">
+      <div class="rail-label">Idea chain</div>
+      <h3>Risk & Return</h3>
+      <p>Portfolio choice → systematic risk → CAPM → cost of equity → valuation.</p>
+      <a class="idea-link" href="../index.html#ideas">Trace the idea chain →</a>
+    </div>
+
+    <div class="rail-card">
+      <div class="rail-label">Architecture test</div>
+      <h3>Three laureates</h3>
+      <p>Không có template riêng cho 1990: cùng Story Mode, TOC, Finance Lens và Deep Dive như 1981/1983.</p>
+    </div>
+  </aside>
+</main>
+
+<footer class="footer">
+  <div><strong>NOBEL ECONOMICS</strong><br><br>Case 1990 · Multi-laureate stress test</div>
+  <div class="ledger">MARKOWITZ / MILLER / SHARPE<br>INVESTOR → MARKET → FIRM<br>SHARED CSS / SHARED JS</div>
+</footer>
+
+<script src="../assets/site.js" defer></script>
+</body>
+</html>

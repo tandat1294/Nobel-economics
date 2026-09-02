@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Nobel Economics — Architecture Stress Test v0.6</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,520;9..144,650;9..144,750&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body class="home-page">
+
+<header class="topbar">
+  <a class="brand" href="#home">NOBEL ECONOMICS</a>
+  <div class="nav-wrap">
+    <nav class="nav">
+      <a href="#timeline">Timeline</a>
+      <a href="#featured">Featured</a>
+      <a href="#ideas">Ideas</a>
+      <a href="#browse">Explore</a>
+      <a href="#case-system">Case system</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Chuyển chế độ sáng tối">LIGHT MODE</button>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div>
+      <div class="kicker">A digital museum of economic ideas</div>
+      <h1>Nobel<br>Economics</h1>
+      <p class="lead">Không chỉ là danh sách những người đoạt giải. Đây là một kho lưu trữ sống về những câu hỏi đã thay đổi cách chúng ta hiểu thị trường, rủi ro, tăng trưởng, hành vi và giá trị.</p>
+      <div class="micro">
+        <span>1969 → Today</span>
+        <span>Read by year · laureate · idea</span>
+        <span>Story first · evidence underneath</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#timeline">Enter the archive</a>
+        <a class="btn ghost" href="cases/1981.html">Read featured case</a>
+      </div>
+    </div>
+
+    <div class="medal-stage" aria-label="Nobel Economics medal hero">
+      <div class="medal-art">
+        <img src="assets/medal.png" alt="Stylized Nobel medal visual for the Nobel Economics project">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="timeline">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Explore by year</div>
+        <h2>The Nobel Archive</h2>
+      </div>
+      <div class="section-note">
+        Timeline là “xương sống lịch sử” của website. Các năm đã biên tập được đánh dấu như những hồ sơ đã mở; các mốc còn lại vẫn hiện diện để người đọc cảm nhận toàn bộ hành trình từ 1969 đến hôm nay.
+      </div>
+    </div>
+
+    <div class="archive-shell">
+      <div class="archive-top">
+        <div class="status"><b>Archive status</b><br>Curated cases: 1981 · 1983 · 1990</div>
+        <div class="status">Select an illuminated year<br>to inspect the case record</div>
+      </div>
+
+      <div class="timeline-area">
+        <div class="timeline-track">
+          <div class="timeline-line"></div>
+
+          <span class="timeline-decade" style="left:2%">1969</span>
+          <span class="timeline-decade" style="left:21%">1980</span>
+          <span class="timeline-decade" style="left:39%">1990</span>
+          <span class="timeline-decade" style="left:57%">2000</span>
+          <span class="timeline-decade" style="left:75%">2010</span>
+          <span class="timeline-decade" style="left:93%">2020+</span>
+
+          <button class="year-node available active" style="left:23%" data-year="1981" data-url="cases/1981.html" data-name="James Tobin" data-question="Khi giá cổ phiếu “ra lệnh” cho nhà máy có được xây hay không" data-topics="Financial markets / Tobin's q / Monetary transmission" aria-label="1981 James Tobin"></button>
+          <button class="year-node available" style="left:27%" data-year="1983" data-url="cases/1983.html" data-name="Gérard Debreu" data-question="Một nền kinh tế phi tập trung có thực sự tồn tại một hệ thống giá cân bằng?" data-topics="General equilibrium / Fixed point / State-contingent claims" aria-label="1983 Gerard Debreu"></button>
+          <button class="year-node available" style="left:39%" data-year="1990" data-url="cases/1990.html" data-name="Markowitz · Miller · Sharpe" data-question="Finance học cách đo lường, định giá và phân bổ rủi ro như thế nào?" data-topics="Portfolio / CAPM / Corporate finance" aria-label="1990 Markowitz Miller Sharpe"></button>
+
+          <button class="year-node" style="left:7%" data-year="1972" aria-label="1972 chưa biên tập"></button>
+          <button class="year-node" style="left:48%" data-year="1995" aria-label="1995 chưa biên tập"></button>
+          <button class="year-node" style="left:65%" data-year="2005" aria-label="2005 chưa biên tập"></button>
+          <button class="year-node" style="left:82%" data-year="2015" aria-label="2015 chưa biên tập"></button>
+        </div>
+      </div>
+
+      <div class="timeline-detail" id="timelineDetail">
+        <div class="year-big" id="detailYear">1981</div>
+        <div>
+          <div class="kicker">Opened record</div>
+          <h3 id="detailName">James Tobin</h3>
+          <p class="question" id="detailQuestion">Khi giá cổ phiếu “ra lệnh” cho nhà máy có được xây hay không</p>
+        </div>
+        <div class="meta-block">
+          <strong>Case themes</strong>
+          <div id="detailTopics">Financial markets / Tobin's q / Monetary transmission</div>
+          <div class="tags"><span class="tag">Story mode</span><span class="tag">Finance lens</span><span class="tag">Primary source</span></div>
+          <a class="idea-link" id="detailLink" href="cases/1981.html">Read 1981 case →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="featured">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Featured exhibition</div>
+        <h2>One question worth entering through</h2>
+      </div>
+      <div class="section-note">
+        Homepage không chỉ để “chọn bài”. Nó cần có một cửa vào hấp dẫn — một case đủ mạnh để người chưa biết tên laureate vẫn muốn đọc tiếp.
+      </div>
+    </div>
+
+    <div class="featured">
+      <aside class="featured-ledger">
+        <div class="featured-year">1981</div>
+        <div class="featured-name">James Tobin</div>
+        <p>Financial markets, portfolio choice and the bridge from asset prices to real investment.</p>
+        <div class="ledger-rule"></div>
+        <div class="ledger-list">
+          <span>Prize / Economic Sciences</span>
+          <span>Institution / Yale</span>
+          <span>Hero concept / Tobin's q</span>
+          <span>Reading mode / Story + Deep Dive</span>
+        </div>
+      </aside>
+
+      <article class="featured-story">
+        <div class="eyebrow">The central question</div>
+        <h3>Khi giá cổ phiếu “ra lệnh” cho nhà máy có được xây hay không</h3>
+        <p>Một phiên giao dịch trên thị trường chứng khoán và quyết định xây thêm một nhà máy dường như thuộc hai thế giới khác nhau. James Tobin dành phần lớn sự nghiệp để chỉ ra rằng giữa hai thế giới ấy tồn tại một cây cầu.</p>
+        <p>Khi thị trường thay đổi cách định giá vốn, doanh nghiệp có thể thay đổi quyết định đầu tư. Khi hàng nghìn doanh nghiệp cùng phản ứng, những biến động tưởng như chỉ thuộc về Wall Street có thể lan sang sản lượng, việc làm và tăng trưởng.</p>
+
+        <div class="quote-box">
+          <div class="q-label">Finance lens / hero concept</div>
+          <p>Thị trường đang định giá capital hiện hữu cao hay thấp đến mức nào so với chi phí cần thiết để tái tạo nó?</p>
+        </div>
+
+        <div class="formula">q ≈ market value of existing capital / replacement cost of capital</div>
+
+        <div class="featured-actions">
+          <a class="btn primary" href="cases/1981.html">Read the full 1981 case</a>
+          <a class="btn ghost" href="#ideas">Follow the idea instead</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="ideas">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Explore by concept</div>
+        <h2>The ideas speak to each other</h2>
+      </div>
+      <div class="section-note">
+        Đây là lớp khác biệt quan trọng so với một encyclopedia: người đọc có thể rời chronology để đi theo một “intellectual chain” xuyên nhiều Nobel khác nhau.
+      </div>
+    </div>
+
+    <div class="network">
+      <article class="chain">
+        <div class="chain-index">Chain / 01</div>
+        <h3>Risk becomes a language</h3>
+        <div class="chain-flow">
+          <div class="chain-node"><small>1990 · Markowitz</small><b>Portfolio choice</b><p>Risk phải được nhìn trong toàn bộ danh mục, thông qua variance và covariance.</p></div>
+          <div class="chain-node"><small>1990 · Sharpe</small><b>Systematic risk</b><p>Nếu diversification loại bỏ được một phần risk, thị trường cần định giá phần nào còn lại?</p></div>
+          <div class="chain-node"><small>Finance today</small><b>Cost of equity</b><p>Beta → CAPM → cost of equity → WACC → valuation.</p></div>
+        </div>
+        <div class="chain-footer">Investor → market → valuation</div>
+      </article>
+
+      <article class="chain">
+        <div class="chain-index">Chain / 02</div>
+        <h3>Equilibrium enters finance</h3>
+        <div class="chain-flow">
+          <div class="chain-node"><small>1983 · Debreu</small><b>General equilibrium</b><p>Liệu một hệ thống giá làm các quyết định phi tập trung trở nên tương thích có tồn tại?</p></div>
+          <div class="chain-node"><small>Arrow–Debreu framework</small><b>State-contingent claims</b><p>Một dollar trong boom và một dollar trong recession là hai economic claims khác nhau.</p></div>
+          <div class="chain-node"><small>Finance today</small><b>State prices</b><p>Risk pricing, contingent claims và modern asset-pricing intuition.</p></div>
+        </div>
+        <div class="chain-footer">Equilibrium → states → pricing</div>
+      </article>
+
+      <article class="chain">
+        <div class="chain-index">Chain / 03</div>
+        <h3>Finance reaches the real economy</h3>
+        <div class="chain-flow">
+          <div class="chain-node"><small>Portfolio reasoning</small><b>Asset substitution</b><p>Nhà đầu tư liên tục tái cân bằng wealth giữa những tài sản có risk, return và liquidity khác nhau.</p></div>
+          <div class="chain-node"><small>1981 · Tobin</small><b>Portfolio balance</b><p>Policy thay đổi balance sheets, asset prices và cost of capital.</p></div>
+          <div class="chain-node"><small>Real economy</small><b>Investment & employment</b><p>Financial valuation cuối cùng có thể quyết định capital formation ngoài đời thực.</p></div>
+        </div>
+        <div class="chain-footer">Portfolio → prices → factories</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt" id="browse">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Three ways to enter</div>
+        <h2>Choose how you want to explore</h2>
+      </div>
+      <div class="section-note">
+        Về lâu dài cùng một content database sẽ phục vụ ba đường đọc khác nhau, thay vì buộc mọi người duyệt theo đúng một menu.
+      </div>
+    </div>
+
+    <div class="browse-grid">
+      <a class="browse-card" href="#timeline">
+        <div><div class="num">01 / YEAR</div><h3>Follow history</h3><p>Đi từ 1969 đến hiện tại và quan sát economic thought thay đổi theo thời gian.</p></div>
+        <span>Open the timeline →</span>
+      </a>
+      <a class="browse-card" href="#featured">
+        <div><div class="num">02 / LAUREATE</div><h3>Meet the thinkers</h3><p>Bắt đầu từ con người: biography, intellectual journey, collaborators và những câu hỏi họ theo đuổi.</p></div>
+        <span>Browse laureates →</span>
+      </a>
+      <a class="browse-card" href="#ideas">
+        <div><div class="num">03 / IDEA</div><h3>Trace a concept</h3><p>Theo một idea như risk, equilibrium hay investment qua nhiều Nobel và nhiều thập kỷ.</p></div>
+        <span>Trace an idea →</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="case-system">
+    <div class="section-head">
+      <div>
+        <div class="kicker">Reading architecture</div>
+        <h2>Story first. Depth on demand.</h2>
+      </div>
+      <div class="section-note">
+        Đây là cơ chế sẽ cho phép cùng một template xử lý Tobin, Debreu và Nobel 1990 mà không biến bài viết thành textbook notes.
+      </div>
+    </div>
+
+    <div class="case-system">
+      <aside>
+        <div class="kicker">Case sample</div>
+        <div class="case-year">1983</div>
+        <h3>Gérard Debreu</h3>
+        <p>General equilibrium is the stress-test for mathematics-heavy Nobel cases.</p>
+        <div class="tags"><span class="tag">Story</span><span class="tag">Proof intuition</span><span class="tag">Finance lens</span></div>
+      </aside>
+
+      <article>
+        <div class="kicker">Story mode</div>
+        <h4>Một hình ảnh đẹp về “bàn tay vô hình” vẫn chưa phải là một chứng minh</h4>
+        <p>Người đọc được dẫn vào vấn đề bằng câu chuyện và intuition trước. Mathematics chỉ xuất hiện khi người đọc đã hiểu tại sao economics cần đến nó.</p>
+
+        <div class="deep">
+          <button type="button">＋ Deep dive / fixed-point intuition</button>
+          <div class="content">Expandable block dành cho topology, convexity, proof intuition hoặc diagram. Người đọc phổ thông có thể bỏ qua hoàn toàn mà narrative vẫn liền mạch.</div>
+        </div>
+
+        <div class="deep">
+          <button type="button">＋ Finance lens / state-contingent claims</button>
+          <div class="content">Một chiếc ô giao khi trời mưa và một chiếc ô giao khi trời nắng có thể là hai commodities khác nhau. Từ đây mở đường sang state prices và asset pricing.</div>
+        </div>
+
+        <div class="deep">
+          <button type="button">＋ Original source / Nobel lecture</button>
+          <div class="content">Primary source, page reference, quotation ngắn và context sẽ nằm ở lớp bằng chứng — tách khỏi dòng prose chính nhưng luôn truy cập được.</div>
+        </div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div><strong>NOBEL ECONOMICS</strong><br><br>A digital museum of economic ideas.</div>
+  <div class="ledger">TIMELINE / LAUREATES / IDEAS<br>STORY MODE / DEEP DIVE / PRIMARY SOURCES<br>ARCHITECTURE STRESS TEST v0.6</div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>
