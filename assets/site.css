@@ -493,3 +493,115 @@ button{font:inherit}
 @media(prefers-reduced-motion:reduce){
   *{scroll-behavior:auto!important;transition:none!important}
 }
+
+
+/* LAUREATE PORTRAITS --------------------------------------------- */
+.laureate-portrait{
+  margin:24px 0 25px;
+}
+.laureate-portrait-frame{
+  position:relative;
+  overflow:hidden;
+  aspect-ratio:4/5;
+  max-width:210px;
+  border:1px solid var(--line);
+  background:var(--surface);
+}
+.laureate-portrait-frame img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  filter:grayscale(1) sepia(.18) contrast(1.04);
+  opacity:.92;
+  transition:filter var(--ease),opacity var(--ease),transform var(--ease);
+}
+.laureate-portrait:hover img{
+  filter:grayscale(.2) sepia(.08) contrast(1.02);
+  opacity:1;
+  transform:scale(1.015);
+}
+.portrait-credit{
+  max-width:230px;
+  margin-top:8px;
+  color:var(--muted);
+  font:400 7.7px/1.5 var(--mono);
+  letter-spacing:.025em;
+}
+.portrait-credit a{
+  text-decoration:underline;
+  text-decoration-color:color-mix(in srgb,var(--brass-hi) 55%,transparent);
+  text-underline-offset:2px;
+}
+.portrait-credit a:hover{color:var(--ink)}
+
+.laureate-portraits{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:9px;
+  margin:22px 0 25px;
+}
+.laureate-mini{
+  min-width:0;
+}
+.laureate-mini .laureate-portrait-frame{
+  width:100%;
+  max-width:none;
+  aspect-ratio:4/5;
+}
+.laureate-mini .portrait-name{
+  margin-top:7px;
+  color:var(--ink);
+  font:500 8px/1.35 var(--mono);
+  letter-spacing:.03em;
+  text-transform:uppercase;
+}
+.laureate-mini .portrait-credit{
+  font-size:6.8px;
+  line-height:1.4;
+  max-width:none;
+}
+.portrait-placeholder{
+  width:100%;
+  height:100%;
+  display:grid;
+  place-items:center;
+  background:
+    linear-gradient(var(--grid) 1px,transparent 1px),
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px),
+    var(--surface2);
+  background-size:18px 18px;
+  color:var(--brass-hi);
+  font:520 clamp(24px,3vw,40px)/1 var(--display);
+}
+.portrait-status{
+  position:absolute;
+  left:7px;right:7px;bottom:7px;
+  padding:5px 6px;
+  background:color-mix(in srgb,var(--bg) 88%,transparent);
+  border:1px solid var(--line);
+  color:var(--muted);
+  font:400 5.8px/1.35 var(--mono);
+  letter-spacing:.04em;
+  text-transform:uppercase;
+}
+.image-credit-note{
+  padding:18px 20px;
+  border:1px solid var(--line);
+  background:var(--surface);
+  color:var(--muted);
+  font:400 9px/1.7 var(--mono);
+}
+.image-credit-note a{
+  text-decoration:underline;
+  text-underline-offset:2px;
+}
+@media(max-width:850px){
+  .laureate-portrait-frame{max-width:190px}
+  .laureate-portraits{max-width:520px}
+}
+@media(max-width:420px){
+  .laureate-portraits{grid-template-columns:repeat(3,1fr);gap:6px}
+  .laureate-mini .portrait-credit{display:none}
+}
