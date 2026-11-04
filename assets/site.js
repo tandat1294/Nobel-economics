@@ -111,6 +111,7 @@
   // Active case TOC ----------------------------------------------
   const sections = [...document.querySelectorAll('.story-section')];
   const tocLinks = [...document.querySelectorAll('.toc a')];
+  const tocCurrent = document.querySelector('[data-toc-current]');
   if (sections.length && tocLinks.length && 'IntersectionObserver' in window) {
     const linkMap = new Map(
       tocLinks.map((a) => [a.getAttribute('href')?.replace('#', ''), a])
@@ -122,12 +123,43 @@
           if (!entry.isIntersecting) return;
           tocLinks.forEach((a) => a.classList.remove('active'));
           const link = linkMap.get(entry.target.id);
-          if (link) link.classList.add('active');
+          if (link) {
+            link.classList.add('active');
+            if (tocCurrent) {
+              const index = tocLinks.indexOf(link) + 1;
+              tocCurrent.textContent = `${String(index).padStart(2, '0')} · ${link.dataset.short || link.textContent.trim()}`;
+            }
+          }
         });
       },
       { rootMargin: '-25% 0px -65% 0px', threshold: 0 }
     );
 
     sections.forEach((section) => observer.observe(section));
+  }
+
+  // Shared collapsible TOC ---------------------------------------
+  const tocPanel = document.querySelector('.case-reader .toc-panel');
+  if (tocPanel) {
+    const mobileReading = window.matchMedia('(max-width: 850px)');
+    let manuallyChanged = false;
+    const syncToc = () => {
+      if (!manuallyChanged) tocPanel.open = !mobileReading.matches;
+    };
+    tocPanel.addEventListener('toggle', () => {
+      if (tocPanel.dataset.syncing !== 'true') manuallyChanged = true;
+    });
+    const syncForViewport = () => {
+      manuallyChanged = false;
+      tocPanel.dataset.syncing = 'true';
+      syncToc();
+      requestAnimationFrame(() => { delete tocPanel.dataset.syncing; });
+    };
+    syncForViewport();
+    if (mobileReading.addEventListener) mobileReading.addEventListener('change', syncForViewport);
+    else mobileReading.addListener(syncForViewport);
+    tocLinks.forEach((link) => link.addEventListener('click', () => {
+      if (mobileReading.matches) tocPanel.open = false;
+    }));
   }
 })();
